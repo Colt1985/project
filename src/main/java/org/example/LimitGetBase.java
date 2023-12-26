@@ -17,8 +17,11 @@ public class LimitGetBase {
 
     public void selectAll() {
 
-        System.out.println("Введите лимит вывода: ");
+        System.out.println("Введите лимит вывода до 11: ");
         int limit = new Scanner(System.in).nextInt();
+        if (limit > 11 || limit < 1){
+            limit = 5;
+        }
         String sql = "SELECT * FROM Users LIMIT " + limit + ";";
         try (Connection conn = this.connect();
              Statement statement = conn.createStatement();

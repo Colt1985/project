@@ -12,11 +12,14 @@ public class Main {
 
         //1. SQLite — это встраиваемая кроссплатформенная База Данных
 
-       // Select app = new Select();
-       // app.selectAll();
-
+        Select app = new Select();
         LimitGetBase limitGetBase = new LimitGetBase();
-        limitGetBase.selectAll();
+
+        //2. app.selectFirstNameAndLastName();
+        //3. app.selectNameToUpperCase();
+        //4. app.selectAll();
+        //5. app.selectFirstTrySymbolsName();
+        //6. limitGetBase.selectAll();
 
     }
-    }
+}
